@@ -28,14 +28,13 @@ class Queue:
     else:
       self.head = self.head.next
 
-
   def status(self) -> None:
     # Write your code here
-    if self.head == None:
-      pass
-    else:
-      self.head = self.head.next
-
+    temp = self.head
+    while temp!= None:
+      print(temp.data, "=>", sep="", end = "")
+      temp = temp.next
+    print("None")
 
 
 # Do not change the following code
